@@ -24,8 +24,5 @@
   "homepage": "https://github.com/jackyr/react-app-rewire-css-modules-simple#readme",
   "dependencies": {
     "lodash.clonedeep": "^4.5.0"
-  },
-  "peerDependencies": {
-    "react-app-rewired": "^1.6.2"
   }
 }
