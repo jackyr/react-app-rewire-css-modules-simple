@@ -1,0 +1,31 @@
+{
+  "name": "react-app-rewire-css-modules-simple",
+  "version": "1.0.0",
+  "description": "Add CSS Module loader to your create-react-app via react-app-rewired. Simple, without SASS or LESS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackyr/react-app-rewire-css-modules-simple.git"
+  },
+  "keywords": [
+    "create-react-app",
+    "react-app-rewire",
+    "css module",
+    "loader"
+  ],
+  "author": "jackyr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jackyr/react-app-rewire-css-modules-simple/issues"
+  },
+  "homepage": "https://github.com/jackyr/react-app-rewire-css-modules-simple#readme",
+  "dependencies": {
+    "lodash.clonedeep": "^4.5.0"
+  },
+  "peerDependencies": {
+    "react-app-rewired": "^1.6.2"
+  }
+}

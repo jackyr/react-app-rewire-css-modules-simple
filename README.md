@@ -1,2 +1,63 @@
 # react-app-rewire-css-modules-simple
 Add CSS Module loaders to your create-react-app via react-app-rewired. Simple, without SASS or LESS.
+
+## Installation
+
+```
+npm install --save-dev react-app-rewire-css-modules-simple
+```
+
+OR
+
+```
+yarn add --dev react-app-rewire-css-modules-simple
+```
+
+## Usage
+
+Use the following file extensions for any css module styles:
+
+* `*.module.css`
+
+### Example
+
+In your react-app-rewired configuration:
+
+```javascript
+/* config-overrides.js */
+
+const rewireCssModules = require("react-app-rewire-css-modules-simple");
+
+module.exports = function override(config, env) {
+  
+  config = rewireCssModules(config, env);
+  
+  // with loaderOptions
+  config = rewireCssModules.withLoaderOptions({
+    localIdentName: '[local]___[hash:base64:5]',
+  })(config, env);
+
+  return config;
+};
+```
+
+In your React application:
+
+```css
+// src/App.module.css
+
+.app {
+  color: aqua;
+}
+```
+
+```jsx harmony
+// src/App.js
+
+import React from 'react';
+import styles from './App.module.css';
+
+export default ({text}) => (
+    <div className={styles.app}>{text}</div>
+)
+```
